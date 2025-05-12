@@ -1,0 +1,80 @@
+:root {
+  --pink: #ff23b6;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work-Sans", serif;
+  min-height: 2000px;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url(image/1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-position-y: top;
+}
+
+.hero h4,
+.hero h1,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h4 {
+  font-size: 2rem;
+}
+
+.hero h1 {
+  font-family: "Parisienne", cursive;
+  font-size: 6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+.simply-countdown > .simply-section {
+  background-color: var(--pink);
+  box-shadow: var(--shadow);
+}
+
+/* Breakpoint */
+
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .hero a {
+    /* width: 1rem; */
+  }
+}
