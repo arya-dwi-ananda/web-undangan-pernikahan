@@ -5,26 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Undangan Pernikahan</title>
 
+    <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
+    <!-- simply-countdown -->
     <link rel="stylesheet" href="Countdown/default.min.css" />
     <script src="Countdown/simplyCountdown.umd.js"></script>
 
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- CSS Saya -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Hero -->
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
         <h4>Kepada Bapak/Ibu/Saudara/I</h4>
         <h1>Arya & Perempuan</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a class="btn btn-lg mt-5" href="undangan">Lihat Undangan</a>
+        <a class="btn btn-lg mt-5" href="#">Lihat Undangan</a>
       </main>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Arya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Arya</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 25 Desember 2025 di Palembang, Sumatera Selatan</h3>
+            <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/I, untuk hadir pada acara pernikahan kami.</p>
+          </div>
+        </div>
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Arya</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas laudantium impedit.</p>
+                <p>
+                  Putra dari Bpk. Lorem <br />
+                  dan <br />
+                  Ibu Ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img src="image/arya.jpg" alt="Arya" class="img-fluid rounded-circle" />
+              </div>
+            </div>
+          </div>
+          <span class="heart rounded-circle"><i class="bi bi-balloon-heart-fill"></i></span>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="image/perempuan.jpg" alt="Perempuan" class="img-fluid rounded-circle" />
+              </div>
+              <div class="col-8">
+                <h3>Perempuan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas laudantium impedit.</p>
+                <p>
+                  Putra dari Bpk. Ipsum <br />
+                  dan <br />
+                  Ibu Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center text-white">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Lapangan Tenis, Stasius Lama PJKA. <br />
+              Jl. Semut, Ps. Tj. Enim, Kec. Lawang Kidul, Kabupaten Muara Enim, Sumatera Selatan 31711
+            </p>
+            <a href="https://maps.app.goo.gl/6PPYU9nVS7qBuPFc6" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk membuka peta.</a>
+            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda dilangsungkan pernikahan, boleh jadi anda salah jadwal, atau salah tempat.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-5 col-10 mb-5">
+            <div class="card">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 28 Desember 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara akad diharapkan untuk kondusif menjaga kehikmatan dan kekhusyuan seluruh prosesi.</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - selesai</span>
+                  </div>
+                  <div class="col-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 28 Desember 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara akad diharapkan untuk kondusif menjaga kehikmatan dan kekhusyuan seluruh prosesi.</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
@@ -34,7 +171,7 @@
       simplyCountdown(".simply-countdown", {
         year: 2025,
         month: 12,
-        day: 25,
+        day: 28,
         hours: 8, // Target hour [0-23], default: 0
         minutes: 0, // Target minute [0-59], default: 0
         seconds: 0,

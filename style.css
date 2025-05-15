@@ -6,10 +6,11 @@
 
 body {
   font-size: 1.2rem;
-  font-family: "Work-Sans", serif;
-  min-height: 2000px;
+  font-family: "Work Sans", sans-serif;
+  min-height: 4000px;
 }
 
+/* Hero */
 .hero {
   min-height: 100vh;
   background-image: url(image/1.jpg);
@@ -48,17 +49,141 @@ body {
   background-color: var(--pink);
 }
 
+/* Style Countdown */
 .simply-countdown > .simply-section {
   background-color: var(--pink);
   box-shadow: var(--shadow);
 }
 
+/* Bagian Navbar */
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Parisienne", cursive;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.mynavbar .nav-link {
+  color: #999;
+  text-transform: uppercase;
+}
+
+/* Home */
+.home h2,
+.info h2 {
+  font-size: 5rem;
+  font-family: "Parisienne", cursive;
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.home h3 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: #777;
+}
+
+.home {
+  background-image: url(image/bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15.4rem;
+  padding-bottom: 5rem;
+}
+
+.home .couple {
+  margin-top: 4rem;
+}
+
+.home .couple h3 {
+  font-size: 2.4rem;
+  font-family: "Parisienne", cursive;
+  color: var(--pink);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(3.5rem);
+}
+
+.home .heart i {
+  margin: auto;
+  font-size: 1.5rem;
+  color: var(--pink);
+}
+
+/* Info */
+.info {
+  background-color: var(--bg);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 280;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1.1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 280;
+}
+
 /* Breakpoint */
+
+/* Extra Large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(2.6rem);
+  }
+}
 
 /* Laptop */
 @media (max-width: 992px) {
   html {
     font-size: 75%;
+  }
+  .home .heart {
+    display: none;
   }
 }
 
@@ -66,6 +191,12 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 65%;
+    overflow-x: hidden;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -74,7 +205,12 @@ body {
   html {
     font-size: 60%;
   }
-  .hero a {
-    /* width: 1rem; */
+
+  .mynavbar {
+    padding: 0 2rem;
+  }
+
+  .home {
+    margin-top: -5.1rem;
   }
 }
