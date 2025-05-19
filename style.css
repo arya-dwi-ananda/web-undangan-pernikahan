@@ -7,7 +7,6 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 4000px;
 }
 
 /* Hero */
@@ -80,7 +79,9 @@ body {
 .home h2,
 .info h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
   font-size: 5rem;
   font-family: "Parisienne", cursive;
   color: var(--pink);
@@ -178,13 +179,16 @@ body {
 
 /* Story */
 .story,
-.gallery {
+.gallery,
+.rsvp,
+.gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   display: block;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -194,7 +198,9 @@ body {
 }
 
 .story p,
-.gallery p {
+.gallery p,
+.rsvp p,
+.gifts p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -296,8 +302,61 @@ body {
   right: auto;
 }
 
+/* Gallery */
 .gallery {
   background-color: rgb(248, 223, 227);
+}
+
+.rsvp {
+  background-color: var(--bg);
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+.rsvp p {
+  color: white;
+}
+
+.rsvp .form-label {
+  color: white;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid white;
+}
+
+footer {
+  background-color: rgb(248, 223, 227);
+  padding: 3rem;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer small a {
+  text-decoration: none;
+  color: white;
+}
+
+footer small a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+footer li {
+  display: inline;
+  margin: 0.5rem;
 }
 
 /* Breakpoint */
